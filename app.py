@@ -8,7 +8,7 @@ import streamlit as st
 from PIL import Image
 
 # loading the csv data to a Pandas DataFrame
-heart_data = pd.read_csv("E:\\Downloads\\Heart1.csv")
+heart_data = pd.read_csv("Heart1.csv")
 heart_data.head()
 X = heart_data.drop(columns='target', axis=1)
 Y = heart_data['target']
